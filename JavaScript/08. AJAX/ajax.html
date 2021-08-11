@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> JavaScript | AJAX</title>
+  </head>
+  <body>
+
+<!-- 1. ajax change text -->
+
+<!-- <div id="ajax">
+  <h2>ajax change thid text</h2>
+  <button type="button" onclick="loadDoc()" name="button">change content</button>
+
+</div>
+
+<script>
+function loadDoc() {
+  var http = new XMLHttpRequest();
+  http.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById('ajax').innerHTML = this.responseText;
+
+    }
+  };
+  http.open("GET", "ajax_info.txt", true);
+  http.send();
+}
+
+</script> -->
+
+<!-- 2. XMLHttpRequest -->
+<!-- <div id="ajax">
+  <h2>ajax change thid text</h2>
+  <button type="button" onclick="loadDoc()" name="button">change content</button>
+
+</div>
+
+<script>
+function loadDoc() {
+  var http = new XMLHttpRequest();
+  http.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById('ajax').innerHTML = this.responseText;
+
+    }
+  };
+  http.open("GET", "ajax_info.txt", true);
+  http.send();
+}
+
+</script> -->
+
+<!-- 3. request -->
+<!-- http.open("GET", "ajax_info.txt", true);
+http.open("POST", "ajax_info.txt", true); -->
+
+
+<!-- xml application -->
+<button type="button" onclick="loadXMLDoc()"name="button">here</button>
+<br>
+<table id="demo">
+
+</table>
+
+<script>
+function loadXMLDoc(){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function( ){
+    if (this.readystate == 4 && this.status == 200) {
+      myfunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+}
+function myfunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXMl;
+  var table = "<tr><th>Artist</th><th>Title</th></tr>";
+  var x = xmlDoc.getElementByTagName("CD");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x [i].getElementByTagName("ARTIST")[0].childNodes[0].nodeValue + "</td>"
+    x [i].getElementByTagName("TITLE")[0].childNodes[0].nodeValue + "</td>"
+
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Start JavaScript Here -->
+  <script type="text/javascript" src="ajax.js">
+
+  </script>
+  </body>
+</html>

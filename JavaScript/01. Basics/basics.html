@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> JavaScript | Basics</title>
+
+    <script>console.log("script 01")</script>
+  </head>
+  <body>
+
+<p id="demo"></p>
+<script>
+
+document.getElementById("demo") .innerHTML = 10+30;
+</script>
+
+<script>
+document.write(10+30);
+
+</script>
+
+
+<br>
+<br>
+
+<button type="button" onclick="document.write(1+2)"name="button">tryyyy</button>
+
+<script>
+
+window.alert(10+20);
+
+</script>
+
+<script>
+console.log("this is console.log");
+
+</script>
+
+<!-- Start JavaScript Here -->
+<script type="text/javascript" src="basics.js"></script>
+
+<script>
+console.log("script 03");
+
+</script>
+
+<button onclick="window.print()"type="button" name="button">print</button>
+
+<p id="total"></p>
+<!-- JavaScript statement -->
+
+<script type="text/javascript">
+var x, y, z;
+x = 5;
+y = 6;
+z = x + y ;
+
+document.getElementById("total") .innerHTML = "the value of z is " + z + ".";
+
+</script>
+
+<!-- 3. JavaScript syntax -->
+<!-- 01.JavaScript literals
+-numbers are written with or without decimals
+- strings are text, written within double or single quotes
+"string " 'string'
+      02. javascript variable
+      - variable are used the var keyword to declare variable
+      -JavaScript uses the var keyword to declare variable
+      - an equal sign is used to assign values to variable
+        example: var x:
+                  x = 6;
+      03. aritmetic operator (+-*/) example(5 + 10)
+      04. assignment operator (=)
+      05. javascript ekspression : is a combination of values, variable and operator,
+      which computes to a value.the computation is calle an evaluation.
+
+-->
+
+<!-- <p id="let"></p> -->
+
+<!-- <button onclick="this.innerHTML = Date()">the time is?</button> -->
+
+<!-- <p id="math"></p>
+
+<script>
+  document.getElementById("math").innerHTML = Math.PI
+</script> -->
+
+<!-- <p id="math"></p>
+<script>
+document.getElementById("math").innerHTML = Math.random();
+document.getElementById("math").innerHTML = Math.floor(Math.random()*20);
+</script> -->
+
+<!-- <p id="switch"></p>
+<script>
+
+var day;
+switch (new Date().getDay()) {
+  case 0:
+  day = "sunday";
+    break;
+
+  case 1:
+  day = "monday";
+      break;
+
+  case 2:
+  day = "tuesday"
+
+}
+
+document.getElementById('switch').innerHTML = "today is" + day
+</script> -->
+
+<!-- <p id="cars"></p>
+<script>
+var cars = ["porsche","ford","bmw","toyota"]
+var text = "";
+var i ;
+for (var i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById('cars').innerHTML = text;
+
+</script> -->
+
+<!-- <p id="while"></p>
+<script>
+var text = "";
+var i = 0;
+
+while (i<10) {
+  text += "<br> the number is " + i;
+  i++;
+}
+document.getElementById('while').innerHTML = text ;
+</script> -->
+
+<!-- <p id="break"></p>
+<script>
+  var text = "";
+  var i ;
+  for (var i = 0; i < 10; i++) {
+    if (i===6) { break;}
+    text += "the number is " + i +"<br>";
+  }
+      document.getElementById('break').innerHTML = text ;
+</script> -->
+
+<!-- <p id="continue"></p>
+<script>
+  var text = "";
+  var i ;
+  for (var i = 0; i < 10; i++) {
+    if (i===6) { continue;}
+    text += "the number is " + i +"<br>";
+  }
+      document.getElementById('continue').innerHTML = text ;
+</script> -->
+
+<!-- <p id="search"></p>
+
+<script>
+  var str = "this is string";
+  var n = str.search("string");
+  document.getElementById("search").innerHTML = n;
+
+</script> -->
+
+<!-- <button onclick="myFunction()"> press Here</button>
+<p id="replace"></p>
+
+<script>
+  function myFunction() {
+    var str = document.getElementById('replace').innerHTML;
+    var txt = str.replace("Google", "learn tech");
+    document.getElementById('replace').innerHTML = txt;
+  }
+</script> -->
+
+<!-- <p id="function"></p>
+<script>
+var hello;
+hello = () => {
+  return "hello world"
+}
+
+document.getElementById("function").innerHTML = hello();
+
+</script> -->
+
+<!-- <p id="classes"></p>
+
+<script>
+class car {
+  constructor(name, year){
+    this.name = name;
+    this.year = year;
+  }
+}
+mycar = new car("toyota", 2023);
+document.getElementById("classes").innerHTML = mycar.name + " " + mycar.year; -->
+<!-- </script> -->
+
+
+
+<script src="basics.js">
+
+</script>
+
+  </body>
+</html>
